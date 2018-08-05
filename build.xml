@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="assignment" basedir="." default="package">
+	<target name="compile-src" description="Compile all assignments">
+		<javac srcdir="src" destdir="bin" />
+    </target>
+    <target name="package" depends="compile-src" description="Package JAR">
+        <jar destfile="dist/assignment.jar">
+            <manifest>
+                <attribute name="Class-Path" value="assignment.jar"/>
+            </manifest>
+            <fileset dir="bin"/>
+            <fileset dir="./" includes="src/**/*.java" />
+        	<fileset dir="./" includes="*.txt" />
+        </jar>
+    </target>
+</project>
