@@ -150,7 +150,7 @@ Should give the following sort order: ”Toyota”, ”BMW”, ”Mazda”.
 
 You need an internet connection to solve this assignment.
 
-Create a java application that connects to the ”http://www.marakanda.se”
+Create a java application that connects to the ”http://www.sony.com”
 web-site, and prints the contents of the HTTP response’s header and body
 to the console (system.out). The body should contain something like
 &lt;html&gt;...&lt;/html&gt;
